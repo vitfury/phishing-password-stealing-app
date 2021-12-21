@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 /*
@@ -14,5 +16,12 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return view('main');
 });
+
+$router->get('/en/login/signin', function () use ($router) {
+    return view('login');
+});
+
+$router->post('/en/login', ['uses' => 'LoginController@login']);
+
