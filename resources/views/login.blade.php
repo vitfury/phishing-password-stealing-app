@@ -4124,7 +4124,7 @@
                                                 <div class="form__field_pQIC4V"><input class="input_1XX293"
                                                                                        aria-controls="email-error-message"
                                                                                        aria-label="Email" type="email"
-                                                                                       name="username"
+                                                                                       name="email"
                                                                                        placeholder="Email"
                                                                                        autocomplete="on"
                                                                                        data-qa-tag="login-username-input">
@@ -4135,6 +4135,7 @@
                                                     <div class="passwordInput_VLxCaX" data-qa-tag="password-input">
                                                         <input class="input_1XX293 input_hasIcon_zNuTee"
                                                                aria-controls="password-error-message"
+                                                               type="password"
                                                                aria-label="Password" name="password"
                                                                placeholder="Password" data-qa-tag="login-password-input">
                                                         <button class="passwordInput__icon_3gr-Ms" type="button"
