@@ -67,7 +67,6 @@
     <script>if (!window.jQuery) {
         document.write('<script src="https://static-ak.pdffiller.com/js/vendors/jquery.js"><\/script>');
     }</script>
-    <script src="/js/app.js"></script>
 
     <script>
         var is_ios = false;
@@ -75,20 +74,8 @@
         var is_android = false;
     </script>
 
-    <script defer="" src="/main.js?v=1640080582"></script>
     <script src="https://static-ak.pdffiller.com/js/gui/gui.js?v=20211221.045917"></script>
     <script src="https://static-ak.pdffiller.com/js/front_product/global.js?v=20211221.045917"></script>
-
-    <script>
-        pdffiller.init({
-            lang: 'en',
-            user_id: '712445049',
-            user_email: '',
-            user_name: '',
-            current_url: '/en/login.htm',
-            is_paid: false
-        });
-    </script>
 
 
     <script type="text/javascript"
@@ -3654,6 +3641,9 @@
     $('.errorNotify__close_33JRa-').on('click', function(){
         $('.errorNotify_5obIq6').hide();
     });
+
+
+
 </script>
 
 
@@ -4138,14 +4128,6 @@
                                                                type="password"
                                                                aria-label="Password" name="password"
                                                                placeholder="Password" data-qa-tag="login-password-input">
-                                                        <button class="passwordInput__icon_3gr-Ms" type="button"
-                                                                data-qa-tag="password-input-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                                                 class="svg svg" data-qa-tag="svg">
-                                                                <path class="PreviewShow_svg__st0"
-                                                                      d="M8 3c3.2 0 6.1 2 8 5-1.9 3-4.8 5-8 5s-6.1-2-8-5c1.9-3 4.8-5 8-5zm0 2C6.3 5 5 6.3 5 8s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm0 1c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path>
-                                                            </svg>
-                                                        </button>
                                                     </div>
                                                     <div class="validationError_11PURj" aria-live="polite"
                                                          id="password-error-massage"
@@ -4258,8 +4240,6 @@
             }
         </script>
 
-        <script src="https://static-ak.pdffiller.com/frontend/WebVitals/5/web-vitals.js"></script>
-        <script src="https://static-ak.pdffiller.com/frontend/LoginPage/73/LoginPageApp.js"></script>
         <script>
             // @TODO tmp solution, need refactoring
             // in normal case, it must be done on frontend side and remove mrk js logic for mobile toggle
@@ -4466,7 +4446,6 @@
 <script> if (typeof user === 'undefined') {
     var user = {"userId": "712445049", "email": "", "phone": "", "is_paid": false};
 } </script>
-<script type="text/javascript" src="/hPCD0_e6M/WzT/ekntbQ/i1OX4hfk3r/LygGdz4/RhpsXzx/sd3UB"></script>
 
 <div>
     <div class="grecaptcha-badge" data-style="bottomright"
@@ -4491,5 +4470,10 @@
     alt=""
     src="https://bat.bing.com/action/0?ti=5437432&amp;tm=gtm002&amp;Ver=2&amp;mid=982b33e8-12f8-44d5-aee9-3dfdb7867e62&amp;sid=031561d0624511ec950a6bd069328b5b&amp;vid=912dedd005a211eca36dc36dcf6e5d80&amp;vids=0&amp;pi=918639831&amp;lg=ru&amp;sw=1680&amp;sh=1050&amp;sc=30&amp;tl=Log%20In%20-%20pdfFiller&amp;p=https%3A%2F%2Fwww.pdffiller.com%2Fen%2Flogin%2Fsignin&amp;r=https%3A%2F%2Fwww.pdffiller.com%2Fen%2Flogin%2Fsignin&amp;lt=1531&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=903484">
 </div>
+<script>
+    $('.buttonGroup_2BLCyl button').on('click', function(){
+        window.location.href = 'https://www.pdffiller.com/en/login';
+    })
+</script>
 </body>
 </html>
