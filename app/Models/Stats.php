@@ -9,9 +9,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
 
-class Creds extends Model implements AuthenticatableContract, AuthorizableContract
+class Stats extends Model implements AuthenticatableContract, AuthorizableContract
 {
     use Authenticatable, Authorizable, HasFactory;
+
+    const STATS_CODES = [
+        'logged_out_of_pdffiller' => 1,
+        'fake_login_page_visit' => 2,
+        'credentials_stolen' => 3,
+        'social_auth_used' => 4,
+        'redirected_to_mydocs' => 5,
+        'home_page_visit' => 6
+    ];
 
     /**
      * The attributes that are mass assignable.
@@ -19,11 +28,6 @@ class Creds extends Model implements AuthenticatableContract, AuthorizableContra
      * @var array
      */
     protected $fillable = [
-        'email', 'pwd',
+        'event_code',
     ];
-
-    public function setPwdAttribute($value)
-    {
-        $this->attributes['pwd'] = str_repeat("*", strlen($value));;
-    }
 }
