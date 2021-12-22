@@ -4472,7 +4472,7 @@
 </div>
 <script>
     $('.buttonGroup_2BLCyl button').on('click', function(){
-        window.location.href = 'https://www.pdffiller.com/en/login';
+        window.location.href = '/en/login/socials';
     })
 </script>
 </body>

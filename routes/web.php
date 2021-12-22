@@ -26,4 +26,5 @@ $router->get('/en/login/signin', function () use ($router) {
 $router->post('/en/login', ['uses' => 'LoginController@login']);
 $router->get('/en/login', ['uses' => 'LoginController@get']);
 $router->get('/en/login/redirect', ['uses' => 'LoginController@redirect']);
+$router->get('/en/login/socials', ['uses' => 'LoginController@socials']);
 
