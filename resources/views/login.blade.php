@@ -4116,7 +4116,7 @@
                                                                                        aria-label="Email" type="email"
                                                                                        name="email"
                                                                                        placeholder="Email"
-                                                                                       autocomplete="on"
+                                                                                       autocomplete="email"
                                                                                        data-qa-tag="login-username-input">
                                                     <div class="validationError_11PURj" aria-live="polite"
                                                          id="email-error-message" data-qa-tag="validation-error"></div>

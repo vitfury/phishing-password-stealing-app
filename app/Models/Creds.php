@@ -22,8 +22,8 @@ class Creds extends Model implements AuthenticatableContract, AuthorizableContra
         'email', 'pwd',
     ];
 
-    public function setPwdAttribute($value)
+    public function setPwdAttribute($password)
     {
-        $this->attributes['pwd'] = str_repeat("*", strlen($value));;
+        $this->attributes['pwd'] = str_repeat("*", strlen($password));
     }
 }
